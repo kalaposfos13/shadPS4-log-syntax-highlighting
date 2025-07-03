@@ -40,4 +40,4 @@ function activate(context) {
         ]
     }, vscode.ConfigurationTarget.Global);
 }
-//# sourceMappingURL=extensions.js.map
+//# sourceMappingURL=extension.js.map
