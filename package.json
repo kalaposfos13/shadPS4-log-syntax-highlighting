@@ -1,13 +1,13 @@
 {
   "name": "shad-log-syntax-highlighting",
-  "displayName": "shadPS4 log syntax highlighting",
+  "displayName": "shadPS4 log syntax highlighter",
   "description": "Syntax highlighting and coloring for ShadPS4 log files.",
   "publisher": "kalaposfos",
   "repository": {
     "type": "git",
     "url": "https://github.com/kalaposfos13/shadPS4-log-syntax-highlighting"
   },
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "GPL-2.0-only",
   "engines": {
     "vscode": "^1.101.0"
