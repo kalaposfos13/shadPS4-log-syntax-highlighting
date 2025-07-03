@@ -1,0 +1,25 @@
+{
+  "name": "shad-log-syntax-syntax-highlighting",
+  "displayName": "shad-log-syntax-syntax-highlighting",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "shadlog",
+      "aliases": ["shadPS4 log file", "shadlog"],
+      "extensions": [".txt",".log"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "shadlog",
+      "scopeName": "source.shadlog",
+      "path": "./syntaxes/shadlog.tmLanguage.json"
+    }]
+  }
+}
