@@ -1,32 +1,39 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "shadPS4 log file",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.shadlog",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.shadlog",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.shadlog",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.shadlog"
+  "name": "shad log",
+  "scopeName": "source.shadlog",
+  "patterns": [
+    {
+      "name": "shadlog.fileline",
+      "match": "\\s\\S+\\.\\S+:\\S+\\s"
+    },
+    {
+      "name": "shadlog.library",
+      "match": "^\\[\\S+\\]"
+    },
+    {
+      "name": "shadlog.level.trace",
+      "match": "<Trace>"
+    },
+    {
+      "name": "shadlog.level.debug",
+      "match": "<Debug>"
+    },
+    {
+      "name": "shadlog.level.info",
+      "match": "<Info>"
+    },
+    {
+      "name": "shadlog.level.warning",
+      "match": "<Warning>"
+    },
+    {
+      "name": "shadlog.level.error",
+      "match": "<Error>"
+    },
+    {
+      "name": "shadlog.level.critical",
+      "match": "<Critical>"
+    }
+  ],
+  "repository": {}
 }
